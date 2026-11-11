@@ -1,6 +1,6 @@
 # Awesome-Cloud-Contract-Intelligence-Platform
 
-# Top Cloud Contract Intelligence Platform Ecosystem
+## Top Cloud Contract Intelligence Platform Ecosystem
 
 **Curated List of SaaS Products & Open-Source GitHub Projects**  
 *Focused on AI-Powered Contract Analytics, Obligation Extraction & Risk Intelligence*  
