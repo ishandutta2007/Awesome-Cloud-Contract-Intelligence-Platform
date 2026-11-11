@@ -1,7 +1,7 @@
 <div align="center">
 
 <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-<a href="https://github.com/ishandutta2007/Awesome-Cloud-Contract-Intelligence-Platform/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Cloud-Contract-Intelligence-Platform?style=for-the-badge&color=gold" alt="GitHub Stars" /></a>
+<a href="https://github.com/ishandutta2007/Awesome-Cloud-Contract-Intelligence-Platform/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Cloud-Contract-Intelligence-Platform?style=for-the-badge&color=gold" alt="GitHub_Stars" /></a>
 <a href="https://github.com/ishandutta2007/Awesome-Cloud-Contract-Intelligence-Platform/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Cloud-Contract-Intelligence-Platform?style=for-the-badge&color=blue" alt="GitHub Forks" /></a>
 <a href="https://github.com/ishandutta2007/Awesome-Cloud-Contract-Intelligence-Platform/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-Cloud-Contract-Intelligence-Platform?style=for-the-badge&color=red" alt="GitHub Issues" /></a>
 <a href="https://github.com/ishandutta2007/Awesome-Cloud-Contract-Intelligence-Platform/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge" alt="License: MIT" /></a>
@@ -83,9 +83,9 @@ The industry is **highly fragmented yet experiencing aggressive multi-front cons
 
 ## 🔓 Open-Source GitHub Projects
 
-*Self-hosted contract intelligence, AI-assisted clause review, and modern CLM repositories sorted in descending order by GitHub stargazers count. Every star badge links directly to that repository's stargazers page.*
+*Self-hosted contract intelligence, AI-assisted clause review, and modern CLM repositories sorted in descending order by GitHub stargazers count. Every Stars_Badge links directly to that repository's stargazers page.*
 
-| Project | ⭐ Stars | 📝 Description | 🎯 Focus Area |
+| Project | ⭐ GitHub_Stars | 📝 Description | 🎯 Focus Area |
 |:---|:---:|:---|:---|
 | **[DocuSeal](https://github.com/docusealco/docuseal)** | [![Stars](https://img.shields.io/github/stars/docusealco/docuseal?style=social&color=white)](https://github.com/docusealco/docuseal/stargazers) | Open-source platform for providing secure digital signatures, document field verification, automated PDF processing, and mobile-friendly signing workflows. | ✍️ Document Signing & Execution |
 | **[Documenso](https://github.com/documenso/documenso)** | [![Stars](https://img.shields.io/github/stars/documenso/documenso?style=social&color=white)](https://github.com/documenso/documenso/stargazers) | Modern, open-source digital signing infrastructure designed to be embedded into any contract workflow or self-hosted agreement stack via comprehensive REST/GraphQL APIs. | 🔐 Document Signing Infrastructure |
@@ -118,7 +118,7 @@ You can combine these modular open-source projects into an enterprise-grade cont
 Contributions are warmly encouraged! Here is how you can help expand this community resource:
 1. 🍴 Fork the repository.
 2. 🌿 Create your feature branch (`git checkout -b feature/add-new-platform`).
-3. 📝 Add your entry into `README.md` adhering to the table format (include official links, pricing, free tier terms, and star badges).
+3. 📝 Add your entry into `README.md` adhering to the table format (include official links, pricing, free tier terms, and Stars_Badges).
 4. 💡 Commit your changes with a descriptive message (`git commit -m 'feat: Add NewPlatform to open-source section'`).
 5. 🚀 Push to the branch (`git push origin feature/add-new-platform`) and open a Pull Request.
 
