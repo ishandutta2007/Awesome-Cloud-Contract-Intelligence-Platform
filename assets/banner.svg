@@ -1,0 +1,207 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Linear Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#030712" />
+    </linearGradient>
+
+    <!-- Glowing Accent Gradients -->
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9" />
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="25" result="blur" />
+    </filter>
+
+    <!-- Grid Pattern -->
+    <pattern id="gridPattern" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.8" stroke-opacity="0.45" />
+      <circle cx="40" cy="40" r="1" fill="#38bdf8" fill-opacity="0.3" />
+    </pattern>
+
+    <style>
+      .glow-orb-1 {
+        animation: floatOrb1 10s ease-in-out infinite alternate;
+      }
+      .glow-orb-2 {
+        animation: floatOrb2 12s ease-in-out infinite alternate;
+      }
+      .pulse-ring {
+        animation: pulseScale 3s ease-in-out infinite;
+      }
+      .dash-flow {
+        stroke-dasharray: 8, 8;
+        animation: flowDash 20s linear infinite;
+      }
+      .dash-flow-rev {
+        stroke-dasharray: 6, 6;
+        animation: flowDashRev 16s linear infinite;
+      }
+      .float-pill {
+        animation: floatPill 6s ease-in-out infinite alternate;
+      }
+      .float-pill-delay {
+        animation: floatPill 7s ease-in-out infinite alternate;
+        animation-delay: -3s;
+      }
+
+      @keyframes flowDash {
+        from { stroke-dashoffset: 0; }
+        to { stroke-dashoffset: -400; }
+      }
+      @keyframes flowDashRev {
+        from { stroke-dashoffset: 0; }
+        to { stroke-dashoffset: 350; }
+      }
+      @keyframes floatOrb1 {
+        0% { transform: translate(0px, 0px); opacity: 0.35; }
+        100% { transform: translate(60px, 30px); opacity: 0.65; }
+      }
+      @keyframes floatOrb2 {
+        0% { transform: translate(0px, 0px); opacity: 0.3; }
+        100% { transform: translate(-50px, -25px); opacity: 0.6; }
+      }
+      @keyframes pulseScale {
+        0%, 100% { opacity: 0.2; transform: scale(0.98); }
+        50% { opacity: 0.55; transform: scale(1.02); }
+      }
+      @keyframes floatPill {
+        0% { transform: translateY(0px); }
+        100% { transform: translateY(-8px); }
+      }
+
+      .title-text {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 800;
+        font-size: 46px;
+        letter-spacing: -0.5px;
+        fill: url(#primaryGrad);
+      }
+      .subtitle-text {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        fill: #94a3b8;
+        letter-spacing: 0.5px;
+      }
+      .badge-text {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 600;
+        font-size: 13px;
+        fill: #e2e8f0;
+      }
+      .desc-text {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        fill: #64748b;
+      }
+    </style>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1200" height="420" rx="16" fill="url(#bgGrad)" />
+
+  <!-- Grid Overlay -->
+  <rect width="1200" height="420" rx="16" fill="url(#gridPattern)" />
+
+  <!-- Ambient Dynamic Glowing Orbs (Background Layers) -->
+  <g filter="url(#softGlow)">
+    <circle class="glow-orb-1" cx="220" cy="110" r="130" fill="#38bdf8" />
+    <circle class="glow-orb-2" cx="1020" cy="300" r="160" fill="#a855f7" />
+    <circle class="glow-orb-1" cx="620" cy="380" r="140" fill="#6366f1" />
+  </g>
+
+  <!-- Dynamic Cyber/Circuit Network Lines (Background) -->
+  <g opacity="0.45">
+    <path class="dash-flow" d="M 50 80 Q 300 20 600 70 T 1150 90" fill="none" stroke="#38bdf8" stroke-width="1.8" />
+    <path class="dash-flow-rev" d="M 80 340 Q 400 390 750 330 T 1120 350" fill="none" stroke="#818cf8" stroke-width="1.8" />
+    <path class="dash-flow" d="M 150 200 C 350 240, 450 160, 700 210 S 950 180, 1100 230" fill="none" stroke="#c084fc" stroke-width="1.2" stroke-opacity="0.4" />
+  </g>
+
+  <!-- Interactive Data Nodes (Pulsing Circles) -->
+  <g>
+    <circle cx="160" cy="80" r="5" fill="#38bdf8" filter="url(#glow)" />
+    <circle cx="600" cy="70" r="4" fill="#818cf8" />
+    <circle cx="1050" cy="90" r="6" fill="#c084fc" filter="url(#glow)" />
+    <circle cx="320" cy="355" r="4" fill="#38bdf8" />
+    <circle cx="880" cy="340" r="5" fill="#818cf8" filter="url(#glow)" />
+  </g>
+
+  <!-- FOREGROUND: Content Card Frame (Clean Glassmorphism) -->
+  <rect x="60" y="45" width="1080" height="330" rx="20" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.2" stroke-opacity="0.7" />
+  
+  <!-- Subtle inner border highlight -->
+  <rect x="62" y="47" width="1076" height="326" rx="18" fill="none" stroke="#ffffff" stroke-width="0.7" stroke-opacity="0.08" />
+
+  <!-- Top Category Chip / Label -->
+  <g transform="translate(100, 78)">
+    <rect x="0" y="0" width="290" height="32" rx="16" fill="#0f172a" stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.7" />
+    <circle cx="16" cy="16" r="4" fill="#38bdf8" filter="url(#glow)">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <text x="32" y="21" class="badge-text" fill="#38bdf8">AI &amp; CLM KNOWLEDGE REPOSITORY</text>
+  </g>
+
+  <!-- Version / Update Pill -->
+  <g transform="translate(940, 78)">
+    <rect x="0" y="0" width="160" height="32" rx="16" fill="#1e1b4b" stroke="#818cf8" stroke-width="1" stroke-opacity="0.6" />
+    <text x="80" y="21" class="badge-text" text-anchor="middle" fill="#c7d2fe">Updated 2026</text>
+  </g>
+
+  <!-- Primary Foreground Title -->
+  <!-- Guaranteed high-contrast, uncluttered foreground typography -->
+  <text x="100" y="165" class="title-text">Cloud Contract Intelligence Platform</text>
+
+  <!-- Subtitle -->
+  <text x="100" y="205" class="subtitle-text">Curated Ecosystem of Enterprise SaaS &amp; Open-Source Legal AI Technologies</text>
+
+  <!-- Narrative Summary line -->
+  <text x="100" y="238" class="desc-text">Automated Clause Extraction • Portfolio Risk Scoring • Obligation Auditing • Agentic Workflows</text>
+
+  <!-- Feature Pills / Highlights (Floating smoothly in lower foreground area) -->
+  <g class="float-pill" transform="translate(100, 275)">
+    <rect x="0" y="0" width="220" height="42" rx="10" fill="#0f172a" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.6" />
+    <text x="18" y="26" font-family="-apple-system, sans-serif" font-size="16">⚡</text>
+    <text x="44" y="26" class="badge-text" fill="#f1f5f9">AI Obligation Analytics</text>
+  </g>
+
+  <g class="float-pill-delay" transform="translate(340, 275)">
+    <rect x="0" y="0" width="220" height="42" rx="10" fill="#0f172a" stroke="#818cf8" stroke-width="1" stroke-opacity="0.6" />
+    <text x="18" y="26" font-family="-apple-system, sans-serif" font-size="16">🛡️</text>
+    <text x="44" y="26" class="badge-text" fill="#f1f5f9">Risk &amp; Redline Auditing</text>
+  </g>
+
+  <g class="float-pill" transform="translate(580, 275)">
+    <rect x="0" y="0" width="240" height="42" rx="10" fill="#0f172a" stroke="#c084fc" stroke-width="1" stroke-opacity="0.6" />
+    <text x="18" y="26" font-family="-apple-system, sans-serif" font-size="16">🤖</text>
+    <text x="44" y="26" class="badge-text" fill="#f1f5f9">Agentic MCP Workflows</text>
+  </g>
+
+  <g class="float-pill-delay" transform="translate(840, 275)">
+    <rect x="0" y="0" width="260" height="42" rx="10" fill="#0f172a" stroke="#10b981" stroke-width="1" stroke-opacity="0.6" />
+    <text x="18" y="26" font-family="-apple-system, sans-serif" font-size="16">📂</text>
+    <text x="44" y="26" class="badge-text" fill="#f1f5f9">Self-Hostable Open Source</text>
+  </g>
+</svg>
